@@ -21,7 +21,7 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.php">
           <img src="image/logo.png" height="30px" width="90px" alt="">
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
