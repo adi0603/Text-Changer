@@ -132,3 +132,8 @@ function ctc() {
   }
   
 }
+function ClearFields() {
+
+     document.getElementById("text").value = "";
+     toastr["success"]("Text box Cleared.", "Success!");
+}
