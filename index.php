@@ -60,6 +60,7 @@
 
 <center>
 <div class="btn-group">
+  <button type="button" class="btn btn-danger" onclick="ClearFields()">Clear</button> &nbsp;&nbsp;
   <button type="button" class="btn btn-info" onclick="ctc()">Copy To Clipboard</button> &nbsp;&nbsp;
   <button type="button" class="btn btn-primary">Select Case</button>
   <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,11 +132,5 @@
   </div>
   </div>
 </footer>
-<script src="js/toastr.min.js"></script>
-<script type="text/javascript">
-  function info() {
-    toastr.success("Success Message");
-  }
-</script>
 </body>
 </html>
