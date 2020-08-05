@@ -61,7 +61,7 @@
 <center>
 <div class="btn-group">
   <button type="button" class="btn btn-danger" onclick="ClearFields()">Clear</button> &nbsp;&nbsp;
-  <button type="button" class="btn btn-info" onclick="ctc()">Copy To Clipboard</button> &nbsp;&nbsp;
+  <button type="button" class="btn btn-info" onclick="ctc()">Copy Text</button> &nbsp;&nbsp;
   <button type="button" class="btn btn-primary">Select Case</button>
   <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
