@@ -14,12 +14,42 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="js/convert.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/test.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/test.css">
+    <script src="js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="myFunction()">
+  <div class="loading" id="loader" >
+  <div class="finger finger-1">
+    <div class="finger-item">
+      <span></span><i></i>
+    </div>
+  </div>
+        <div class="finger finger-2">
+    <div class="finger-item">
+      <span></span><i></i>
+    </div>
+  </div>
+        <div class="finger finger-3">
+    <div class="finger-item">
+      <span></span><i></i>
+    </div>
+  </div>
+        <div class="finger finger-4">
+    <div class="finger-item">
+      <span></span><i></i>
+    </div>
+  </div>
+        <div class="last-finger">
+    <div class="last-finger-item"><i></i></div>
+  </div>
+  <center>
+    <br><p  style="color: white;">Loading....</p></center>
+    </div>
   <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top">
+
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top" id="myDiv1" style="display:none;">
   <div class="container">
     <a class="navbar-brand" href="index.php">
           <img src="image/logo.png" height="30px" width="90px" alt="">
@@ -46,7 +76,7 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container" id="myDiv2" style="display:none;">
   <center>
     <h1 class="mt-4">Text Changer</h1>
     <p>Simply enter or paste your text and choose the case you want to convert it to.</p>
@@ -59,13 +89,10 @@
 <!-- /.container -->
 
 <center>
-<div class="btn-group">
-  <button type="button" class="btn btn-danger" onclick="ClearFields()">Clear</button> &nbsp;&nbsp;
-  <button type="button" class="btn btn-info" onclick="ctc()">Copy Text</button> &nbsp;&nbsp;
-  <button type="button" class="btn btn-primary">Select Case</button>
-  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
+<div class="btn-group" id="myDiv3" style="display:none;">
+  <button type="button" class="btn btn-danger" onclick="ClearFields()">Clear</button> &nbsp;
+  <button type="button" class="btn btn-info" onclick="ctc()">Copy Text</button> &nbsp;
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Select Case&nbsp;</button>
   <div class="dropdown-menu">
     <a class="dropdown-item" id="alert-target" onclick="sc()">Sentence case</a>
     <a class="dropdown-item" onclick="lc()">lowercase</a>
@@ -77,8 +104,8 @@
   </div>
 </div>
 </center>
-<footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
+<footer class="mainfooter" role="contentinfo" id="myDiv4" style="display:none;">
+  <div class="footer-middle" >
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6">
@@ -132,5 +159,24 @@
   </div>
   </div>
 </footer>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv1").style.display = "block";
+  document.getElementById("myDiv2").style.display = "block";
+  document.getElementById("myDiv3").style.display = "block";
+  document.getElementById("myDiv4").style.display = "block";
+  document.body.style.backgroundColor = "white";
+}
+</script>
 </body>
 </html>
