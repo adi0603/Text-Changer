@@ -49,10 +49,14 @@
     </div>
   <!-- Navigation -->
 
-<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top" id="myDiv1" style="display:none;">
   <script type="text/javascript">
-  toastr["info"]("Welcome To Text Changer.", "Welcome!");
+    function display(){
+      toastr["info"]("Welcome To Text Changer.", "Welcome!");
+    }
+  
   </script>
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top" id="myDiv1" style="display:none;">
+  
   <div class="container">
     <a class="navbar-brand" href="index.php">
           <img src="image/logo.png" height="30px" width="90px" alt="">
@@ -179,6 +183,7 @@ function showPage() {
   document.getElementById("myDiv3").style.display = "block";
   document.getElementById("myDiv4").style.display = "block";
   document.body.style.backgroundColor = "white";
+  display();
 }
 </script>
 </body>
