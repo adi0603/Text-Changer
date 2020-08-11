@@ -48,10 +48,11 @@
     <br><p  style="color: white;">Loading....</p></center>
     </div>
   <!-- Navigation -->
-<script type="text/javascript">
+
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top" id="myDiv1" style="display:none;">
+  <script type="text/javascript">
   toastr["info"]("Welcome To Text Changer.", "Welcome!");
   </script>
-<nav class="navbar navbar-expand-lg navbar-primary bg-primary static-top" id="myDiv1" style="display:none;">
   <div class="container">
     <a class="navbar-brand" href="index.php">
           <img src="image/logo.png" height="30px" width="90px" alt="">
