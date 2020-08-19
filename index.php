@@ -143,7 +143,7 @@
             <ul class="social-network social-circle">
              <li><a href="https://www.instagram.com/_simplethoughts._/?hl=en" target="_blank" class="icoFacebook" title="Instagram"><i class="fa fa-instagram"></i></a></li>
              <li><a href="https://www.linkedin.com/in/aditya-pandey-1375a818a/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="https://aditya-pandey.herokuapp.com/" class="icoLinkedin" target="_blank" title="Portfolio"><i class="fas fa-link"></i></a></li>
+             <li><a href="https://adityapandey.me/" class="icoLinkedin" target="_blank" title="Portfolio"><i class="fas fa-link"></i></a></li>
              <li><a href="https://github.com/adi0603" class="icoLinkedin" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
             </ul>
             </center>
